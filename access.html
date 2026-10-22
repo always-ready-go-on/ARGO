@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARGO Google Access</title>
+  <meta name="description" content="ARGO's Google sign-in is invite-only for now. How to ask for access, or use your own Google Cloud client instead.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <a class="brand" href="./">ARGO</a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <h1>Google sign-in access</h1>
+  <p class="lead">ARGO's Google sign-in is invite-only for now. If Google showed you <strong>"Access blocked"</strong> or <strong>Error 403: access_denied</strong> when you signed in, your Google account hasn't been invited yet.</p>
+
+  <h2>Ask for access</h2>
+  <p>Email us the Google account address you want to connect:</p>
+  <p><a class="button" href="mailto:sr.argo.v2@gmail.com?subject=ARGO%20Google%20access&amp;body=Please%20invite%20this%20Google%20account%20to%20ARGO%27s%20Google%20sign-in%3A%20">Email sr.argo.v2@gmail.com</a></p>
+  <p>Once you're added, usually within a few days, sign in to Google in ARGO again. We use the address only to add it to the invite list, and remove it from the list when you ask.</p>
+
+  <div class="notice">While ARGO is invite-only, Google ends an invited person's sign-in after 7 days. ARGO then asks you to connect Google again.</div>
+
+  <h2>Or use your own Google Cloud client (computers only)</h2>
+  <p>On macOS, Windows or Linux you can skip the invite list by signing in through a Google Cloud project of your own. It's free and takes about ten minutes:</p>
+  <ol>
+    <li>In <a href="https://console.cloud.google.com/">Google Cloud Console</a>, create a project.</li>
+    <li>Under <strong>APIs &amp; Services → Library</strong>, enable the Google Calendar, Google Tasks, Gmail and Google Drive APIs (only the ones you want).</li>
+    <li>Under <strong>Google Auth Platform</strong>, set up the consent screen with audience <strong>External</strong>, and add your own Google address under <strong>Audience → Test users</strong>.</li>
+    <li>Under <strong>Clients</strong>, create an OAuth client of type <strong>Desktop app</strong>.</li>
+    <li>In ARGO's Google step, choose <strong>Advanced: use your own Google Cloud client</strong>, and paste the client ID and secret.</li>
+  </ol>
+  <p class="muted">Android signs in through Google Play services with ARGO's own app identity, so on a phone the invite list is the only way in for now.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:sr.argo.v2@gmail.com">sr.argo.v2@gmail.com</a></p>
+
+  <footer>
+    <a href="./">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <span>© 2026 ARGO</span>
+  </footer>
+</main>
+</body>
+</html>
