@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARGO Privacy Policy</title>
+  <meta name="description" content="How the ARGO app for desktop and Android accesses, uses, stores and shares your data, including data from Google APIs.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <a class="brand" href="./">ARGO</a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective October 22, 2026</p>
+
+  <p>ARGO is a personal AI agent app for computers (macOS, Windows, Linux) and Android phones. This policy explains what data the app accesses, how it is used, where it is stored, and with whom it is shared. In short: <strong>ARGO runs on your own devices, and its developers do not operate a server that receives your data.</strong></p>
+
+  <h2>1. Who we are</h2>
+  <p>"ARGO", "we" and "us" refer to the developers of the ARGO app. You can reach us at <a href="mailto:sr.argo.v2@gmail.com">sr.argo.v2@gmail.com</a>.</p>
+
+  <h2>2. Data ARGO accesses</h2>
+  <h3>What you give it</h3>
+  <p>The requests you type or speak, files you attach, and the settings you choose.</p>
+  <h3>What it reads on your device when you ask</h3>
+  <p>Files, pages and app content ARGO opens to complete a task, and, if you turn them on, media folders or (on Android) on-device data sources you allow. Each source is off until you turn it on.</p>
+  <h3>Google user data, if you connect a Google account</h3>
+  <p>Connecting Google is optional. You choose what to allow on Google's consent screen:</p>
+  <table>
+    <thead><tr><th>Google service</th><th>Permission</th><th>What ARGO does with it</th></tr></thead>
+    <tbody>
+      <tr><td>Google Calendar</td><td><code>calendar.<wbr>readonly</code> <code>calendar.<wbr>events</code></td><td>Shows your calendars and events; creates, changes or deletes an event only when you ask.</td></tr>
+      <tr><td>Google Tasks</td><td><code>tasks</code></td><td>Shows your task lists; adds, completes or changes tasks when you ask.</td></tr>
+      <tr><td>Gmail</td><td><code>gmail.<wbr>readonly</code></td><td>Searches and reads your email to answer you. Read only: ARGO does not send, delete, label or change mail.</td></tr>
+      <tr><td>Google Drive</td><td><code>drive.<wbr>readonly</code></td><td>Finds and reads your files to answer you. Read only.</td></tr>
+      <tr><td>Your Google account</td><td><code>openid</code> <code>email</code> <code>profile</code></td><td>Shows which account is connected.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. How ARGO uses your data</h2>
+  <p>ARGO uses data only to provide the features you use: answering your requests, carrying out tasks you ask for, and showing you the results. Google user data is used only for the user-facing features described above, at your request.</p>
+  <p>To answer a request, ARGO sends the relevant content (for example, the text of an email you asked about) to the <strong>AI model provider you configured</strong> in ARGO, such as Anthropic, OpenAI or Google, or a model you run yourself. That provider processes it under its own terms and privacy policy, with your account and key. ARGO sends Google user data to a provider only to produce the answer or action you asked for.</p>
+
+  <h2>4. What ARGO does not do</h2>
+  <ul>
+    <li>ARGO's developers do not receive, collect or store your data. The app has no ARGO server in the path between your devices and Google, or between your devices and your AI provider.</li>
+    <li>We do not sell your data, use it for advertising, or share it with data brokers.</li>
+    <li>We do not use Google user data to develop, improve or train generalized or non-personalized AI or machine-learning models.</li>
+    <li>No person at ARGO reads your data.</li>
+    <li>ARGO sends no usage analytics or crash reports to its developers. Its diagnostic telemetry is off by default, and if you turn it on, it goes only to a destination you set.</li>
+  </ul>
+
+  <h2>5. Where your data is stored</h2>
+  <ul>
+    <li><strong>Google sign-in on a computer:</strong> the grant Google issues (a refresh token) is stored in your operating system's keychain (macOS Keychain, Windows Credential Manager or Linux Secret Service), or, where that is unavailable, in an encrypted file in ARGO's folder on your computer.</li>
+    <li><strong>Google sign-in on Android:</strong> sign-in is handled by Google Play services. ARGO keeps the short-lived access token in memory only.</li>
+    <li><strong>Conversations, memory and results:</strong> stored on your device in ARGO's folder. Content ARGO read for you, such as an email, can be part of your conversation history there.</li>
+    <li><strong>Between your own devices:</strong> if you link several of your devices, ARGO can sync between them. That sync is end-to-end encrypted: only your devices hold the keys.</li>
+  </ul>
+
+  <h2>6. How long data is kept, and how to delete it</h2>
+  <ul>
+    <li>Data stays on your device until you delete it. You can forget or wipe ARGO's memory and delete conversation history in the app, or delete ARGO's folder.</li>
+    <li>When you disconnect Google in ARGO, ARGO asks Google to revoke its access and deletes the stored sign-in from your device.</li>
+    <li>You can also remove ARGO's access at any time from your Google Account: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Uninstalling the app removes its data on Android; on a computer, delete ARGO's folder (by default <code>~/.argo</code>) to remove what it stored.</li>
+  </ul>
+
+  <h2>7. Sharing</h2>
+  <p>ARGO shares your data only:</p>
+  <ul>
+    <li>with the AI model provider you configured, as described in section 3, to answer your requests;</li>
+    <li>with Google, when ARGO calls Google's services on your behalf;</li>
+    <li>with other services you explicitly connect or ask ARGO to use, to carry out what you asked; and</li>
+    <li>between your own linked devices, end-to-end encrypted.</li>
+  </ul>
+
+  <h2>8. Google API Services User Data Policy</h2>
+  <div class="notice">ARGO's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</div>
+
+  <h2>9. Security</h2>
+  <p>Sign-in uses Google's OAuth with PKCE, and secrets are kept in the operating system's credential store where available. No method of storage is perfectly secure; keep your devices locked and up to date.</p>
+
+  <h2>10. Children</h2>
+  <p>ARGO is not directed to children under 13 and is not intended for their use.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>If this policy changes, we will update this page and its effective date. If a change affects how Google user data is used, we will ask for your consent again where required.</p>
+
+  <h2>12. Contact</h2>
+  <p>Questions, requests or concerns: <a href="mailto:sr.argo.v2@gmail.com">sr.argo.v2@gmail.com</a></p>
+
+  <footer>
+    <a href="./">Home</a>
+    <a href="terms.html">Terms of Service</a>
+    <span>© 2026 ARGO</span>
+  </footer>
+</main>
+</body>
+</html>
